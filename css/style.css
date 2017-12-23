@@ -35,4 +35,11 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top; /* fix the top of the image at the top */
+  /* clip-path clip/cut an element part.
+  The polygon function must receive at least 3 coords
+  that will compose the visible part of the element
+  demo at: https://bennettfeely.com/clippy/
+   */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
