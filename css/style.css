@@ -129,6 +129,18 @@ body {
   }
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 
 /* link, viseted ... are pseudo pseudo classes which
 are kind of a states of a selector
@@ -141,6 +153,7 @@ are kind of a states of a selector
   display: inline-block;
   border-radius: 100px;
   transition: all .2s;
+  position: relative;
 }
 
 .btn:hover{
@@ -157,4 +170,38 @@ are kind of a states of a selector
 .btn-white{
   background-color: #fff;
   color: #777;
+}
+
+
+/* pseudo element */
+.btn::after{
+  /* content and properties must be
+  specified for it to work */
+  content: "";
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-white::after{
+  background-color: #fff;
+}
+
+.btn:hover::after{
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  /* shortcut: animationName duration timingFunction delay: */
+  animation: moveInBottom .5s ease-out .75s;
+  /* automatically applies the 0%
+  style before the animation starts: */
+  animation-fill-mode: backwards;
 }
