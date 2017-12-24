@@ -1,0 +1,9 @@
+Cascade:
+process of combining different stylesheets and resolving conflicts
+between different css rules and declarations, when more than one rule applies
+to a certain element
+
+CSS can come from different sources. These declarations are:h
+- Author (developer declarations)
+- User (for instance, user changes default font size of the browser)
+- Browser (user agent/Default browser declarations)

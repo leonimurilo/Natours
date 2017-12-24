@@ -1,4 +1,11 @@
 /*
+3 principles of good css:
+- Responsive design (fluid layouts, media queries, responsive imgs, correct units, desktop-first vs mobile-first)
+- Maintainable and scalable code (clean, easy, reusable, organized, name conventions)
+- Web performance (compress code, compress images, css preprocessor, less code)
+*/
+
+/*
 COLORS:
 
 Light green: #7ed56f
