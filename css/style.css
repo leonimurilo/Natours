@@ -15,7 +15,9 @@ Dark green: #28b485
 */
 
 /* reset all elements */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   /*
