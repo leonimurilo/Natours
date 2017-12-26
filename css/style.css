@@ -26,7 +26,14 @@ Dark green: #28b485
 }
 
 html {
-  font-size: 10px; /* 1rem will be 10px since it is related to the root font-size (which is being defined here) */
+  /* font-size: 10px; */
+  /* 1rem will be 10px since it is related to the root font-size (which is being defined here) */
+  /* root font size as px is not a good practice because if the user changes to another font-size,
+  the root will be fixed at px and the layout won't keep up with the font-size the user chose */
+  font-size: 62.5%;
+  /* Since the browser's default root font-size is 16px, 62.5% will represent 10px
+  and if the user increase the font-size, 62.5% will represent more than 10px
+  which will allow the layout to "react" to the change (thanks to the "rem")*/
 }
 
 /* font stuff will be inherited by the elements
