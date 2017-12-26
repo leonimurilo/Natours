@@ -45,3 +45,37 @@ It's the mechanism that allows certain properties to be passed from parent to ch
 - Inheritance of a property only works if no one declares a value for that property
 - The "inherit" keyword can be used to force inheritance on a certain property
 - The "initial" keyword can be used to reset a property to its initial value
+
+--------------------------- Visual formatting model ---------------------------
+
+Algorithm that calculates boxes and determines the layout of these boxes, for Each
+element in the render tree, in order to determine the final layout of the page.
+
+1) Box model
+box-sizing: border-box includes the element's padding as part of its length
+
+2) Box Types:
++ Block level boxes (block, flex, list-item and table)
+  + Elements formatted visually as blocks
+  + 100% of parent's width
+  + Vertically one after another
+  + default Box-model
++ Inline boxes (inline)
+  + Content is distributed in lines
+  + Occupies only content's space
+  + no line breaks
+  + no heights and widths
+  + Paddings and margins are only horizontal
++ Inline-block
+  + Same as Inline blocks but with the default Box-model
+
+3) Positioning schemes:
++ Normal flow
++ Floats
++ Absolute Positioning
+
+4) Stacking contexts
+Properties like z-index define "layers" for the layout to be rendered.
+the z-index property is not the only one which create new stacking contexts.
+For example, an opacity value different from one, a transform, a filter or
+other properties also create new stacking contexts.
