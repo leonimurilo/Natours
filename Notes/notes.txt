@@ -81,3 +81,5 @@ For example, an opacity value different from one, a transform, a filter or
 other properties also create new stacking contexts.
 
 --------------------- How to think when building css code ---------------------
+
+Best strategy: Think -> Build -> Architect
