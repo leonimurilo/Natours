@@ -79,3 +79,5 @@ Properties like z-index define "layers" for the layout to be rendered.
 the z-index property is not the only one which create new stacking contexts.
 For example, an opacity value different from one, a transform, a filter or
 other properties also create new stacking contexts.
+
+--------------------- How to think when building css code ---------------------
